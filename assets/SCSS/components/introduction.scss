@@ -1,0 +1,54 @@
+.introduction {
+    text-align: center;
+    padding: 35px;
+    background-color: #f6f6f6;
+
+    &__titreintro {
+        margin: 0px;
+        font-size: revert;
+    }
+
+    &__texteintro {
+        color: #4e4e4e;
+    }
+
+    &__bouton {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__boutonintro {
+        padding: 15px 20px;
+        border-radius: 20px;
+        color: white;
+        background-image: linear-gradient($secondary, $primary);
+        cursor: pointer;
+        box-shadow: 2px 2px 5px grey;
+        font-size: small;
+    }
+
+    &__boutonintro:hover {
+        opacity: 0.9;
+        box-shadow: 4px 4px 7px grey;
+    }
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+
+    &__commander {
+        padding: 15px 40px;
+        border-radius: 30px;
+        color: $quaternary;
+        background-image: linear-gradient($secondary, $primary);
+        cursor: pointer;
+        box-shadow: $shadow0;
+        text-align: center;
+
+        &:hover {
+            opacity: 0.9;
+            box-shadow: 4px 4px 7px grey;
+        }
+    }
+}

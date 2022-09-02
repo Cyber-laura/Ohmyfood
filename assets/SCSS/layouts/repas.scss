@@ -1,0 +1,148 @@
+.menu {
+    margin-top: -60px;
+    background-color: $quaternary;
+    position: relative;
+    border-radius: $size2;
+    padding-bottom: 35px;
+
+    &__h1 {
+        font-family: "shrikhand", sans-serif;
+        font-size: x-large;
+        padding: 35px 15px 0px 15px;
+        margin: 0;
+    }
+
+    &__far,
+    &__fas {
+        position: absolute;
+        right: 25px;
+        top: 3.3%;
+        font-size: x-large;
+    }
+
+    >&__far {
+        >&__fas {
+            background-image: linear-gradient($secondary, $primary);
+            clip: rect(24px, 24px, 24px, 0px);
+            color: transparent;
+            -webkit-background-clip: text;
+            transition: all 200ms ease-in-out;
+        }
+
+        &:hover>&__fas {
+            clip: rect(0px, 24px, 24px, 0px)
+        }
+    }
+
+    &__bloc {
+        position: relative;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    &__h2 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: large;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-color: $tertiary;
+            position: absolute;
+            height: 3px;
+            width: 45px;
+            top: 20px;
+            left: 0px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__menus {
+        background: $quaternary;
+        margin-bottom: 10px;
+        border-radius: $size0;
+        cursor: pointer;
+        box-shadow: $shadow0;
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+        animation: menu 3s;
+        position: relative;
+        animation-fill-mode: both;
+    }
+
+    .play1 {
+        animation-delay: 0s;
+    }
+
+    .play2 {
+        animation-delay: .1s;
+    }
+
+    .play3 {
+        animation-delay: .2s;
+    }
+
+    .play4 {
+        animation-delay: .3s;
+    }
+
+    &__caption {
+        padding: 10px;
+        @include text-overflow;
+        flex: 1;
+    }
+
+    &__h3 {
+        margin: 0;
+        font-size: medium;
+        @include text-overflow;
+    }
+
+    &__p {
+        margin: 0;
+        @include text-overflow;
+    }
+
+    &__price {
+        font-weight: 500;
+        margin-left: auto;
+        display: flex;
+        align-items: flex-end;
+        padding: 10px;
+    }
+
+    &__selection {
+        background-color: $tertiary;
+        margin-right: -50px;
+        width: 50px;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        background-color: $quaternary;
+        color: $tertiary;
+        border-radius: $size0;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__menus:hover &__selection {
+        margin-right: 0px;
+    }
+
+    &__menus:hover i {
+        animation: coche 1s ease;
+    }
+}

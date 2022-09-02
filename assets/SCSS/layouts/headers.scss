@@ -1,0 +1,22 @@
+/**/
+.titrelogo {
+  &__logo {
+    display: block;
+    margin: auto;
+    width: 180px;
+    padding: 10px;
+  }
+}
+
+.titrelogo__icon {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  color: $five;
+}
+
+.coverpicture img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}

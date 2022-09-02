@@ -1,0 +1,18 @@
+.far {
+    >.fas {
+      background-image: linear-gradient($secondary, $primary);
+      clip: rect(24px, 24px, 24px, 0px);
+      color: transparent;
+      -webkit-background-clip: text;
+      transition: all 200ms ease-in-out;
+    }
+  
+    &:hover>.fas {
+      clip: rect(0px, 24px, 24px, 0px)
+    }
+  }
+  
+  i.fas.fa-heart {
+    top: 0px;
+    right: 0px;
+  }
