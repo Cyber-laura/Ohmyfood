@@ -573,9 +573,6 @@ footer i.fas {
 .fonctionnement__number:hover {
   background-color: #f5edff;
 }
-.fonctionnement__number:hover i {
-  color: #9356DC;
-}
 .fonctionnement__number:before {
   background-color: #9356DC;
   height: 24px;
@@ -600,6 +597,9 @@ footer i.fas {
   flex-grow: 1;
   position: relative;
   cursor: pointer;
+}
+.fonctionnement li:hover i {
+  color: #9356DC;
 }
 .fonctionnement i.fas {
   margin-right: 25px;
