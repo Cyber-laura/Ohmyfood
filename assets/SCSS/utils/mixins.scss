@@ -6,13 +6,6 @@
 }
 @mixin tablette {
     @media all and (min-width:700px) {
-        .fonctionnement {
-          & ol {
-            display: flex;
-            flex-wrap: wrap;
-          }
-        }
-      
         .restaurants__cards {
           display: flex;
           flex-wrap: wrap;
