@@ -1,10 +1,10 @@
 .far {
     >.fas {
       background-image: linear-gradient($secondary, $primary);
-      clip: rect(24px, 24px, 24px, 0px);
-      color: transparent;
       -webkit-background-clip: text;
+      color: transparent;
       transition: all 200ms ease-in-out;
+      clip: rect(24px, 24px, 24px, 0px);
     }
   
     &:hover>.fas {

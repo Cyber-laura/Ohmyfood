@@ -370,10 +370,10 @@ ul {
 }
 .far > .fas {
   background-image: linear-gradient(#FF79DA, #9356DC);
-  clip: rect(24px, 24px, 24px, 0px);
-  color: transparent;
   -webkit-background-clip: text;
+  color: transparent;
   transition: all 200ms ease-in-out;
+  clip: rect(24px, 24px, 24px, 0px);
 }
 .far:hover > .fas {
   clip: rect(0px, 24px, 24px, 0px);
@@ -750,12 +750,11 @@ footer i.fas {
 }
 @media all and (min-width: 700px) {
   .restaurants__cards {
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, auto);
+    display: grid;
   }
   .restaurants__cards .restaurants__card {
     margin: 10px;
-    display: grid;
     position: relative;
   }
 }

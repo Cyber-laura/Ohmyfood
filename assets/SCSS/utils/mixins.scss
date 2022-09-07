@@ -4,32 +4,33 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
 @mixin tablette {
-    @media all and (min-width:700px) {
-        .restaurants__cards {
-          display: flex;
-          flex-wrap: wrap;
-      
-          .restaurants__card {
-            margin: 10px;
-            display: grid;
-            position: relative;
-          }
-        }
+  @media all and (min-width:700px) {
+    .restaurants__cards {
+      grid-template-columns: repeat(2, auto);
+      display: grid;
+
+      .restaurants__card {
+        margin: 10px;
+        position: relative;
       }
+    }
+  }
 }
-@mixin desktop{
-    @media all and (min-width:1100px) {
-        .fonctionnement ul {
-          display: flex;
-        }
-        .menu__cards {
-          display: flex;
-        }
-      
-        .menu__bloc {
-          width: 100%;
-        }
-      }
+
+@mixin desktop {
+  @media all and (min-width:1100px) {
+    .fonctionnement ul {
+      display: flex;
+    }
+
+    .menu__cards {
+      display: flex;
+    }
+
+    .menu__bloc {
+      width: 100%;
+    }
+  }
 }
- 
